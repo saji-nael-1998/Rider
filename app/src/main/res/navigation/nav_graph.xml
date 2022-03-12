@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.rider.view.HomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_parkListFragment"
+            app:destination="@id/parkListFragment"
+            app:enterAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/parkListFragment"
+        android:name="com.example.rider.view.ParkListFragment"
+        android:label="Park List"
+        tools:layout="@layout/fragment_park_list" >
+        <action
+            android:id="@+id/action_parkListFragment_to_parkFragment2"
+            app:destination="@id/parkFragment2"
+            app:enterAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/parkFragment2"
+        android:name="com.example.rider.view.ParkFragment"
+        android:label="fragment_park"
+        tools:layout="@layout/fragment_park" >
+        <action
+            android:id="@+id/action_parkFragment2_to_parkListFragment"
+            app:destination="@id/parkListFragment" />
+        <action
+            android:id="@+id/action_parkFragment2_to_routeFragment"
+            app:destination="@id/routeFragment"
+            app:enterAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/routeFragment"
+        android:name="com.example.rider.view.RouteFragment"
+        android:label="fragment_route"
+        tools:layout="@layout/fragment_route" />
+</navigation>

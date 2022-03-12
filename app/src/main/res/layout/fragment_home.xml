@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_black"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".view.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/card_shap"
+        android:elevation="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+
+        android:paddingVertical="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/yellow_card_template"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="20dp">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:text="Welcome to 3tark"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+            <TextView
+    android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:text="Now you can find the taxi quite easily and know the status of the taxi parks easily"
+                android:textAlignment="center"
+                android:textColor="#C6C6C6"
+
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/welcome_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Welcome"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
